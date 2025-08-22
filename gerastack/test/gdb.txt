@@ -1,0 +1,14 @@
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+Starting program: /home/grisha/programming/gerasqd/gerastack/test/test 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555553df in stack<int>::peek (this=0x7fffffffdc20) at /usr/local/include/gerastack.hpp:79
+79			while (top->upper)
+    1  set logging pn
+    2  set logging on
+    3  r
+    4  show commands 
