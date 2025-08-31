@@ -44,7 +44,7 @@ public:
 	deque(const deque &obj) {
 		node *current = obj.header;
         while (current) {
-            this->append(current->value);
+            this->push_back(current->value);
             current = current->next;
         }
 	};
@@ -60,7 +60,7 @@ public:
 		this->clear();
         node *current = obj.header;
         while (current) {
-            this->append(current->value);
+            this->push_back(current->value);
             current = current->next;
         }
         return *this;
@@ -210,7 +210,7 @@ public:
 		deque<type> *tmp = new deque<type>();
 		node *current = obj.header;
         while (current) {
-            tmp->append(current->value);
+            tmp->push_back(current->value);
             current = current->next;
         }
         return *tmp;
